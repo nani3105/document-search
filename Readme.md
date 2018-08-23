@@ -59,3 +59,14 @@ stream the document
 Tokenize the document based on different strategies.
 Filter the document with stopwords etc.
 And generate the relavent indexed map.
+
+####Performance Test Results
+````text
+PerformanceSearchTest.indexSearch: [measured 200000 out of 200010 rounds, threads: 1 (sequential)]
+ round: 0.00 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 1, GC.time: 0.01, time.total: 0.52, time.warmup: 0.02, time.bench: 0.50
+PerformanceSearchTest.patternSearch: [measured 2000000 out of 2000010 rounds, threads: 1 (sequential)]
+ round: 0.00 [+- 0.24], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 7179, GC.time: 28.91, time.total: 3625.60, time.warmup: 0.06, time.bench: 3625.54
+PerformanceSearchTest.simpleSearch: [measured 2000000 out of 2000010 rounds, threads: 1 (sequential)]
+ round: 0.00 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 6953, GC.time: 25.22, time.total: 2777.27, time.warmup: 0.05, time.bench: 2777.22
+
+````
